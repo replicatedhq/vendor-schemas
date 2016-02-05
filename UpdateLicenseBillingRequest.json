@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "begin": {
+            "type": "string"
+        },
+        "end": {
+            "type": "string"
+        },
+        "frequency": {
+            "type": "string"
+        },
+        "revenue": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "frequency",
+        "revenue",
+        "begin",
+        "end"
+    ]
+}

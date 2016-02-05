@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "-": {
+            "type": "string"
+        },
+        "Config": {
+            "type": "string"
+        },
+        "CreatedAt": {
+            "type": "string"
+        },
+        "Editable": {
+            "type": "bool"
+        },
+        "EditedAt": {
+            "type": "string"
+        },
+        "Sequence": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "-",
+        "Sequence",
+        "Config",
+        "Editable",
+        "CreatedAt",
+        "EditedAt"
+    ]
+}

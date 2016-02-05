@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "ActiveChannels": {
+            "type": "array"
+        },
+        "AppId": {
+            "type": "string"
+        },
+        "CreatedAt": {
+            "type": "string"
+        },
+        "Editable": {
+            "type": "bool"
+        },
+        "EditedAt": {
+            "type": "string"
+        },
+        "Sequence": {
+            "type": "integer"
+        },
+        "Version": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "AppId",
+        "Sequence",
+        "Version",
+        "Editable",
+        "CreatedAt",
+        "EditedAt",
+        "ActiveChannels"
+    ]
+}

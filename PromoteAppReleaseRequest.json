@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "channels": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "label": {
+            "type": "string"
+        },
+        "release_notes": {
+            "type": "string"
+        },
+        "required": {
+            "type": "bool"
+        }
+    },
+    "required": [
+        "channels",
+        "release_notes",
+        "label",
+        "required"
+    ]
+}

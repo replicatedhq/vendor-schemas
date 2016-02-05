@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "default": {
+            "type": "string"
+        },
+        "hidden": {
+            "type": "bool"
+        },
+        "name": {
+            "type": "string"
+        },
+        "required": {
+            "type": "bool"
+        },
+        "title": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "type",
+        "title",
+        "default",
+        "required",
+        "hidden"
+    ]
+}

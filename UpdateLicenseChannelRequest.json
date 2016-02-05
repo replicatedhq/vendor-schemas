@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "channel_id": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "channel_id"
+    ]
+}

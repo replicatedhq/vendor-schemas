@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "Id": {
+            "type": "string"
+        },
+        "Name": {
+            "type": "string"
+        },
+        "Position": {
+            "type": "integer"
+        },
+        "ReleaseLabel": {
+            "type": "string"
+        },
+        "ReleaseNotes": {
+            "type": "string"
+        },
+        "ReleaseSequence": {
+            "type": "integer"
+        }
+    },
+    "required": [
+        "Id",
+        "Name",
+        "Position",
+        "ReleaseSequence",
+        "ReleaseLabel",
+        "ReleaseNotes"
+    ]
+}

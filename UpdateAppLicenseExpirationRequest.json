@@ -1,0 +1,12 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "expiration_date": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "expiration_date"
+    ]
+}

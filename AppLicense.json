@@ -1,0 +1,153 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "ActivationEmail": {
+            "type": "string"
+        },
+        "ActiveInstanceCount": {
+            "type": "integer"
+        },
+        "Anonymous": {
+            "type": "bool"
+        },
+        "AppId": {
+            "type": "string"
+        },
+        "Archived": {
+            "type": "bool"
+        },
+        "Assignee": {
+            "type": "string"
+        },
+        "Billing": {
+            "type": "object",
+            "properties": {
+                "begin": {
+                    "type": "string"
+                },
+                "end": {
+                    "type": "string"
+                },
+                "frequency": {
+                    "type": "string"
+                },
+                "revenue": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "revenue",
+                "frequency",
+                "begin",
+                "end"
+            ]
+        },
+        "ChannelId": {
+            "type": "string"
+        },
+        "ChannelName": {
+            "type": "string"
+        },
+        "ExpirationPolicy": {
+            "type": "string"
+        },
+        "ExpireDate": {
+            "type": "string"
+        },
+        "FieldValues": {
+            "type": "array"
+        },
+        "GrantDate": {
+            "type": "string"
+        },
+        "Id": {
+            "type": "string"
+        },
+        "InactiveInstanceCount": {
+            "type": "integer"
+        },
+        "IsInstanceTracked": {
+            "type": "bool"
+        },
+        "LastSync": {
+            "type": "string"
+        },
+        "LicenseVersions": {
+            "type": "object",
+            "properties": {
+                "InstalledAppVersion": {
+                    "type": "object",
+                    "properties": {
+                        "Label": {
+                            "type": "string"
+                        },
+                        "LastCheck": {
+                            "type": "string"
+                        },
+                        "Sequence": {
+                            "type": "integer"
+                        },
+                        "UpdateAvailable": {
+                            "type": "bool"
+                        }
+                    },
+                    "required": [
+                        "Sequence",
+                        "Label",
+                        "LastCheck",
+                        "UpdateAvailable"
+                    ]
+                },
+                "ReplicatedVersions": {
+                    "type": "object",
+                    "properties": {
+                        ".*": {
+                            "type": "array"
+                        }
+                    }
+                }
+            },
+            "required": [
+                "InstalledAppVersion",
+                "ReplicatedVersions"
+            ]
+        },
+        "RequireActivation": {
+            "type": "bool"
+        },
+        "RevokationDate": {
+            "type": "string"
+        },
+        "UntrackedInstanceCount": {
+            "type": "integer"
+        },
+        "UpdatePolicy": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "Id",
+        "AppId",
+        "ChannelId",
+        "ChannelName",
+        "Assignee",
+        "UpdatePolicy",
+        "Archived",
+        "GrantDate",
+        "ExpireDate",
+        "ExpirationPolicy",
+        "RevokationDate",
+        "Anonymous",
+        "FieldValues",
+        "Billing",
+        "RequireActivation",
+        "ActivationEmail",
+        "LicenseVersions",
+        "LastSync",
+        "InactiveInstanceCount",
+        "ActiveInstanceCount",
+        "UntrackedInstanceCount",
+        "IsInstanceTracked"
+    ]
+}

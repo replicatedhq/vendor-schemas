@@ -1,0 +1,68 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "activation_email": {
+            "type": "string"
+        },
+        "app_id": {
+            "type": "string"
+        },
+        "assignee": {
+            "type": "string"
+        },
+        "billing": {
+            "type": "object",
+            "properties": {
+                "begin": {
+                    "type": "string"
+                },
+                "end": {
+                    "type": "string"
+                },
+                "frequency": {
+                    "type": "string"
+                },
+                "revenue": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "revenue",
+                "frequency",
+                "begin",
+                "end"
+            ]
+        },
+        "channel_id": {
+            "type": "string"
+        },
+        "expiration_date": {
+            "type": "string"
+        },
+        "expiration_policy": {
+            "type": "string"
+        },
+        "field_values": {
+            "type": "array"
+        },
+        "require_activation": {
+            "type": "bool"
+        },
+        "update_policy": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "assignee",
+        "app_id",
+        "channel_id",
+        "field_values",
+        "require_activation",
+        "activation_email",
+        "update_policy",
+        "expiration_date",
+        "expiration_policy",
+        "billing",
+    ]
+}

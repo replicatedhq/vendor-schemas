@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "-": {
+            "type": "object",
+            "properties": {
+                "access_token": {
+                    "type": "string"
+                },
+                "expiry": {
+                    "type": "string"
+                },
+                "raw": {},
+                "refresh_token": {
+                    "type": "string"
+                },
+                "token_type": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "access_token",
+                "raw"
+            ]
+        },
+        "name": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "name",
+        "-"
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "activation_email": {
+            "type": "string"
+        },
+        "assignee": {
+            "type": "string"
+        },
+        "billing": {
+            "type": "object",
+            "properties": {
+                "begin": {
+                    "type": "string"
+                },
+                "end": {
+                    "type": "string"
+                },
+                "frequency": {
+                    "type": "string"
+                },
+                "revenue": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "revenue",
+                "frequency",
+                "begin",
+                "end"
+            ]
+        },
+        "expiration_date": {
+            "type": "string"
+        },
+        "expiration_policy": {
+            "type": "string"
+        },
+        "require_activation": {
+            "type": "bool"
+        },
+        "update_policy": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "assignee",
+        "update_policy",
+        "require_activation",
+        "activation_email",
+        "expiration_date",
+        "expiration_policy",
+        "billing"
+    ]
+}
