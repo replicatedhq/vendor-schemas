@@ -63,6 +63,6 @@
         "update_policy",
         "expiration_date",
         "expiration_policy",
-        "billing",
+        "billing"
     ]
 }
